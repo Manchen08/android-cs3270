@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CS3270A2 Wheeler</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="btnLoad2">Load Fragment 2</string>
+    <string name="btnLoad4">Load Fragment 4</string>
+    <string name="strBtnLoad3">Load Fragment 3</string>
+    <string name="strBtnSwitch"><![CDATA[Switch 3 & 4]]></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
