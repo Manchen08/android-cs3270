@@ -12,16 +12,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import static android.R.attr.id;
-
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class incorrectFragment extends DialogFragment {
+public class TimesUpFrag extends DialogFragment {
 
 
-    public incorrectFragment() {
+    public TimesUpFrag() {
         // Required empty public constructor
     }
 
@@ -30,7 +28,7 @@ public class incorrectFragment extends DialogFragment {
 //    public View onCreateView(LayoutInflater inflater, ViewGroup container,
 //                             Bundle savedInstanceState) {
 //        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_incorrect, container, false);
+//        return inflater.inflate(R.layout.fragment_times_up, container, false);
 //    }
 
     @NonNull
@@ -38,20 +36,22 @@ public class incorrectFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         Dialog dialog =
-                builder.setMessage("You gave them too much!")
-                    .setCancelable(false)
-                    .setTitle("Sorry!")
-                    .setPositiveButton("Let's go!", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            MainActivity ma = (MainActivity) getActivity();
-                            ma.resetCounts();
-                            ma.updateGame();
-                            // On the click of the positive button execute wanted code.
-                        }
-                    })
-                    .create();
+                builder.setMessage("Times up!")
+                        .setCancelable(false)
+                        .setTitle("Out of Time!")
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                MainActivity ma = (MainActivity) getActivity();
+                                ma.resetCounts();
+                                ma.updateGame();
+
+                                // On the click of the positive button execute wanted code.
+                            }
+                        })
+                        .create();
 
         return dialog;
     }
+
 }

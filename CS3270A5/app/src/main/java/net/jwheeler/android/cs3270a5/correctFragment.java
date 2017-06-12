@@ -43,6 +43,8 @@ public class correctFragment extends DialogFragment {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             MainActivity ma = (MainActivity) getActivity();
+                            ma.resetCounts();
+                            ma.updateGame();
                             // On the click of the positive button execute wanted code.
                         }
                     })
