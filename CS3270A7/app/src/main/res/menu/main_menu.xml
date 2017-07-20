@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_editCourse"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:orderInCategory="100"
+        android:title="Edit Course"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_deleteCourse"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:orderInCategory="200"
+        android:title="Delete Course"
+        app:showAsAction="ifRoom"/>
+</menu>
