@@ -8,9 +8,9 @@ import java.util.Date;
 
 public class Objects {
     protected class Temperature {
-        protected String ID;
-        protected Date Date;
-        protected String Temp;
-        protected String DeviceID;
+        protected String id;
+        protected String date;
+        protected String temp;
+        protected String sensorID;
     }
 }
